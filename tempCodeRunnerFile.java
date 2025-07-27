@@ -1,1 +1,1 @@
-if(arr[i] == target){
+arr
