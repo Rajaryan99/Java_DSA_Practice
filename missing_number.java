@@ -1,7 +1,10 @@
+import java.util.Arrays;
+
 public class missing_number {
     public static void main(String[] args) {
         int [] arr = {3, 0, 1};
         missingNumber(arr);
+        System.out.println(Arrays.toString(arr));
     }
 
     public static void missingNumber(int[] arr){
@@ -19,11 +22,11 @@ public class missing_number {
        for(int idx = 0; i<arr.length; idx++){
             if(arr[idx] != idx){
                 System.out.println(idx);
-            } else {
-                System.out.println(arr.length);
+            } 
             }
+            System.out.println(arr.length);
        }
-
+       
     }
 
     public static void swap(int[] arr, int first, int second){
@@ -31,4 +34,3 @@ public class missing_number {
         arr[first] = arr[second];
         arr[second] = temp;
     }
-}
