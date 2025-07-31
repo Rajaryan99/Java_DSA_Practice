@@ -1,22 +1,22 @@
 public class string {
     public static void main(String args[]){
-        StringBuilder sb  = new StringBuilder("Tony");
-        
-        for(int i=0; i<sb.length(); i++){
+       
+        String s = "null";
+        System.out.println(isPalindrom(s));
+   
+    }
 
-            int  front=i;
-            int back = sb.length() - 1 -1;
+    public static boolean isPalindrom(String str){
 
-            char frontChar = sb.charAt(front);
-            char backChar  = sb.charAt(back);
+        str.toLowerCase();
+        for(int i=0; i<str.length() /2; i++){
+        char start = str.charAt(i);
+        char end = str.charAt(str.length() - 1 - i);
 
-            sb.setCharAt(front, backChar);
-            sb.setCharAt(back, frontChar);
+        if(start !=  end){
+            return false;
         }
-
-        
-        System.out.println(sb);
-
-
+        }
+        return true;
     }
 }
